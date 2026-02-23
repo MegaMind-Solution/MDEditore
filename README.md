@@ -5,7 +5,7 @@
 ---
 
 ## 🖼️ Preview
-![image](https://github.com/user-attachments/assets/d9f38163-fdfa-4f57-9d16-1234e6d78b7c)
+![image](https://repository-images.githubusercontent.com/1164997372/ffa7c668-8064-49a5-b2c4-aa0792197631)
 
 ---
 
