@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MDEditor.css">
+    <title>MD Editor</title>
+</head>
+
+<body>
+
+    <div id="content"></div>
+</body>
+<script src="MDEditor.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+   const editor = new MDEditor('content', {
+      bold: true,
+      italic: true,
+      underline: true,
+      strikethrough: true,
+      redo: true,
+      undo: true,
+      headings: true,
+      lowercase: true,
+      uppercase: true,
+      superscript: true,
+      subscript: true,
+      orderedList: true,
+      unorderedList: true,
+      toggleCase: true,
+      codeBlock: true,
+      codeInline: true,
+      imageUpload: {
+         imageUploadUrl: '/upload-blog-file/',
+         imageMaxSize: 20 * 1024 * 1024 // 20MB
+      },
+      fileUpload: {
+         fileUploadUrl: '/upload-file/',
+         fileMaxSize: 20 * 1024 * 1024 // 20MB
+      },
+      textColor: true,
+      backgroundColor: true,
+      link: true,
+      table: true,
+      textAlignment:true,
+      mentions: {
+        enableMentions: false,
+        mentionElement: "span",
+        mentionUrl:"",
+        mentionTag:""
+      },
+      initStyles: false,
+      stylesheetUrl: "",
+      hideWatermark: false,
+      toolbarType: "default",
+      overflowMenu: false,
+      showSource: true
+   });
+});
+</script>
+
+</html>
